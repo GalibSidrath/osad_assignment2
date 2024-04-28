@@ -61,8 +61,12 @@ class _ScreenOneState extends State<ScreenOne> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Screen One'),
-        backgroundColor: Colors.greenAccent,
+        title: const Text(
+          'Photo Gallery',
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Color.fromARGB(255, 44, 171, 0),
+        centerTitle: true,
       ),
       body: GridView.builder(
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
